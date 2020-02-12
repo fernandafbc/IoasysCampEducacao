@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/monitorsListFragment">
+
+    <fragment
+        android:id="@+id/monitorsListFragment"
+        android:name="br.com.ioasys.camp.educao.ui.main.MonitorsListFragment"
+        android:label="fragment_monitors_list"
+        tools:layout="@layout/fragment_monitors_list" >
+        <action
+            android:id="@+id/action_monitorsListFragment_to_otherProfileFragment"
+            app:destination="@id/otherProfileFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/otherProfileFragment"
+        android:name="br.com.ioasys.camp.educao.ui.main.OtherProfileFragment"
+        android:label="fragment_other_profile"
+        tools:layout="@layout/fragment_other_profile" >
+        <action
+            android:id="@+id/action_otherProfileFragment_to_bottomSheet"
+            app:destination="@id/bottomSheet" />
+    </fragment>
+    <fragment
+        android:id="@+id/bottomSheet"
+        android:name="br.com.ioasys.camp.educao.ui.main.BottomSheet"
+        android:label="BottomSheet" />
+</navigation>

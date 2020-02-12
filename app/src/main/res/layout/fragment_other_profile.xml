@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.main.OtherProfileFragment">
+
+    <LinearLayout
+        android:id="@+id/otherProfileLinearLayout"
+        android:layout_width="0dp"
+        android:layout_height="230dp"
+        android:background="#08D9D6"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/otherProfileImage"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="50dp"
+            android:src="@drawable/ic_person_black_100dp"
+            app:civ_border_color="#FF2E63"
+            app:civ_border_width="2dp"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="User Name"
+            android:textColor="#252A34"
+            android:textSize="25sp"
+            android:id="@+id/otherProfileUserNameTxt"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherProfileLinearLayout"
+        android:text="22 Anos"
+        android:textSize="18sp"
+        android:layout_marginTop="16dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/otherProfileAgeTxt"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/otherProfileAgeTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="PUC - CORAÇÃO EUCARÍSTICO"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/otherProfileUniversityTxt"
+
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/otherProfileUniversityTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="Ciência da Computação"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/otherProfileCourseTxt"
+
+        />
+
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/otherProfileCourseTxt"
+        android:id="@+id/otherProfileChipGroup"
+        android:layout_marginEnd="40dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="16dp"
+        >
+
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/otherProfileChipGroup"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:text="Solicitar Ajuda"
+        android:id="@+id/askHelpBtn"
+        android:backgroundTint="#08D9D6"
+        app:cornerRadius="15dp"
+        app:strokeColor="#08D9D6"
+        app:rippleColor="#0F8881"
+        android:textColor="#ffffff"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

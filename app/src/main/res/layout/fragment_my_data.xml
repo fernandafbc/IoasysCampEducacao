@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.profile.MyDataFragment">
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:text="22 Anos"
+        android:textSize="18sp"
+        android:layout_marginTop="300dp"
+        android:gravity="center_horizontal"
+        android:id="@+id/profileAgeTxt"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileAgeTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="PUC - CORAÇÃO EUCARÍSTICO"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/profileUniversityTxt"
+
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profileUniversityTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:text="(31)9 9000-0000"
+        android:textSize="18sp"
+        android:gravity="center_horizontal"
+        android:id="@+id/profilePhoneTxt"
+
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/profilePhoneTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Tornar Monitor"
+        android:id="@+id/becomeMonitorBtn"
+        android:backgroundTint="#08D9D6"
+        app:cornerRadius="15dp"
+        app:strokeColor="#08D9D6"
+        app:rippleColor="#0F8881"
+        android:textColor="#ffffff"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/becomeMonitorBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:text="Alterar senha"
+        android:id="@+id/editPasswordBtn"
+        android:backgroundTint="#08D9D6"
+        app:cornerRadius="15dp"
+        app:strokeColor="#08D9D6"
+        app:rippleColor="#0F8881"
+        android:textColor="#ffffff"
+        />
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

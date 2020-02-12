@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Educação</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="make_registration_txt">Faça seu cadastro</string>
+    <string name="name_register_edTxt">Nome</string>
+    <string name="sex_register_txt">Sexo:</string>
+    <string name="university_register_txt">Faculdade:</string>
+    <string name="registration_number_edTxt">Matrícula</string>
+    <string name="phone_register_edTxt">Telefone</string>
+    <string name="email_register_edTxt">E-mail</string>
+    <string name="password_register_edTxt">Senha</string>
+    <string name="confirm_password_register_edTxt">Confirmar Senha</string>
+    <string name="have_account_register_txt">Já tem uma conta?</string>
+    <string name="login_register_txt">Faça login</string>
+    <string name="register_button">cadastrar</string>
+    <string name="main_fragment_empty_error">Este campo não pode ser vazio.</string>
+    <string name="main_fragment_format_error">Formato incorreto. </string>
+
+    <string-array name="sexOptions">
+        <item> </item>
+        <item>Homem</item>
+        <item>Mulher</item>
+    </string-array>
+    <string name="title_activity_teste">TesteActivity</string>
+    <string name="become_monitor">Tornar-se monitor</string>
+    <string name="do_it_later">FAZER ISSO DEPOIS</string>
+    <string name="why_be_monitor">POR QUE SER UM MONITOR?</string>
+    <string name="reason_monitor_register">Se tornando um monitor você pode oferecer ajuda a outras pessoas com as matérias que tem facilidade, e desta forma ajudar a comunidade NOME a crescer!</string>
+    <string name="what_subject">Qual matéria você pode ensinar?</string>
+    <string name="course_ed_txt_register">Curso</string>
+
+</resources>

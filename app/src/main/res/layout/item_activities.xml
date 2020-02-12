@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="136dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="32dp"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="1dp"
+    android:layout_marginEnd="32dp"
+    app:cardBackgroundColor="#EAEAEA"
+    app:cardCornerRadius="15dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierTop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            app:constraint_referenced_ids="actAvatarImg" />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:id="@+id/barrierBottom"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            app:constraint_referenced_ids="actAvatarImg" />
+
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:id="@+id/actAvatarImg"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_margin="12dp"
+            android:src="@drawable/ic_girl"
+            app:civ_border_color="@color/colorPrimary"
+            app:civ_border_width="2dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/actItemNameTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/actAvatarImg"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:text="Fernanda Braga"
+            android:layout_marginTop="8dp"
+
+            />
+
+        <TextView
+            android:id="@+id/actItemAgeTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"
+            android:gravity="center_horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/actAvatarImg"
+            app:layout_constraintTop_toBottomOf="@+id/actItemNameTxt"
+            tools:text="23 anos" />
+
+        <TextView
+            android:id="@+id/actItemUniversityTxt"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/actAvatarImg"
+            app:layout_constraintTop_toBottomOf="@+id/actItemAgeTxt"
+            tools:text="PUC Minas - Coração Eucarístico" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/actAvatarImg"
+            app:layout_constraintTop_toBottomOf="@+id/actItemUniversityTxt"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            android:text="Nome "
+            android:id="@+id/monitorNameTxt"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/actItemUniversityTxt"
+            app:layout_constraintStart_toEndOf="@+id/monitorNameTxt"
+            android:layout_marginStart="4dp"
+            android:text="aceitou ser seu monitor! "
+            android:layout_marginTop="8dp"
+            android:id="@+id/monitorAcceptedTxt"
+
+            />
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="#EAEAEA"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.register.MonitorRegisterFragment">
+
+    <TextView
+        android:id="@+id/monitorRegistrationTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:gravity="center_horizontal"
+        android:text="@string/make_registration_txt"
+        android:textColor="#252A34"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/monitorRegisterBtn"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/monitorRegisterBtn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monitorRegistrationTxt"
+        app:layout_constraintBottom_toTopOf="@+id/doLaterTxt"
+        android:text="@string/become_monitor"
+        android:textColor="#ffffff"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:textStyle="bold"
+        android:layout_marginTop="124dp"
+        app:cornerRadius="1000dp"
+        android:backgroundTint="@color/colorAccent"
+        app:strokeColor="@color/colorAccent"
+        app:rippleColor="#c7224c"
+        android:padding="10dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/doLaterTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/monitorRegisterBtn"
+        android:text="@string/do_it_later"
+        android:textColor="#FF2E63"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="8dp"
+
+        />
+
+
+    <TextView
+        android:id="@+id/whyMonitorTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/why_be_monitor"
+        android:textColor="#ffffff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/doLaterTxt"
+        app:layout_constraintBottom_toTopOf="@+id/reasonMonitor"
+        android:drawableStart="@drawable/info_circle"
+        android:layout_marginStart="70dp"
+        android:drawablePadding="8dp"
+        android:layout_marginTop="74dp"
+        />
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/whyMonitorTxt"
+        android:id="@+id/reasonMonitor"
+        android:text="@string/reason_monitor_register"
+        android:textColor="#ffffff"
+        android:gravity="center_horizontal"
+        android:layout_marginStart="56dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginTop="4dp"
+
+        />
+
+    <TextView
+        android:id="@+id/monitorHaveAccountTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:text="@string/have_account_register_txt"
+        android:textColor="#252A34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/reasonMonitor"
+        android:layout_marginTop="74dp"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/monitorLoginTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/login_register_txt"
+        android:textColor="#FF2E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/monitorHaveAccountTxt"
+        app:layout_constraintTop_toBottomOf="@+id/reasonMonitor"
+        android:layout_marginBottom="8dp"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

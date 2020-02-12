@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.register.SecondRegisterFragment">
+
+    <TextView
+        android:id="@+id/secondRegistrationTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:gravity="center_horizontal"
+        android:text="@string/make_registration_txt"
+        android:textColor="#252A34"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/universityTxt"/>
+
+    <TextView
+        android:id="@+id/universityTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/university_register_txt"
+        android:textColor="#252A34"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/secondRegistrationTxt"
+        app:layout_constraintEnd_toStartOf="@+id/universitySpinner"
+        app:layout_constraintBottom_toTopOf="@+id/courseEdTxt"
+
+        />
+
+    <Spinner
+        android:id="@+id/universitySpinner"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="8dp"
+        android:scrollbarSize="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/universityTxt"
+        app:layout_constraintTop_toBottomOf="@+id/secondRegistrationTxt"
+        app:layout_constraintBottom_toTopOf="@+id/courseEdTxt"
+
+        />
+
+    <EditText
+        android:id="@+id/courseEdTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/course_ed_txt_register"
+        android:textSize="16sp"
+        android:textColor="#252A34"
+        android:textColorHint="#252A34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/universitySpinner"
+        app:layout_constraintBottom_toTopOf="@+id/continueButton"
+
+        />
+
+    <ImageButton
+        android:id="@+id/continueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/courseEdTxt"
+        app:layout_constraintBottom_toTopOf="@+id/secondHaveAccountTxt"
+        app:layout_goneMarginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/secondHaveAccountTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:text="@string/have_account_register_txt"
+        android:textColor="#252A34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/secondLoginTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/login_register_txt"
+        android:textColor="#FF2E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/secondHaveAccountTxt"
+        app:layout_constraintTop_toBottomOf="@+id/continueButton"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

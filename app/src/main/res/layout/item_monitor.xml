@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="8dp"
+    android:layout_marginStart="32dp"
+    android:layout_marginEnd="32dp"
+    app:cardBackgroundColor="#EAEAEA"
+    app:cardCornerRadius="15dp"
+    app:strokeColor="@color/colorAccent"
+    app:strokeWidth="1dp"
+    android:clickable="true"
+    android:focusable="true"
+    >
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="top"
+            android:id="@+id/barrierTop"
+            app:constraint_referenced_ids="avatarImg"
+            />
+
+        <androidx.constraintlayout.widget.Barrier
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:barrierDirection="bottom"
+            android:id="@+id/barrierBottom"
+            app:constraint_referenced_ids="avatarImg"
+            />
+
+        <com.mikhaellopez.circularimageview.CircularImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:id="@+id/avatarImg"
+            android:layout_margin="12dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:civ_border_color="#FF2E63"
+            app:civ_border_width="2dp"
+            android:src="@drawable/ic_girl"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemNameTxt"
+            android:gravity="center_horizontal"
+            android:maxLines="2"
+            tools:text="Fernanda Braga"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarImg"
+            app:layout_constraintTop_toTopOf="@id/barrierTop"
+            android:layout_marginTop="4dp"
+
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemAgeTxt"
+            tools:text="23 anos"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="16dp"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarImg"
+            app:layout_constraintTop_toBottomOf="@+id/itemNameTxt"
+            />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/itemUniversityTxt"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            tools:text="PUC Minas - Coração Eucarístico"
+            android:textSize="14sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/avatarImg"
+            app:layout_constraintTop_toBottomOf="@+id/itemAgeTxt"
+            />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toEndOf="@+id/avatarImg"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/itemAgeTxt"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="12dp"
+            android:id="@+id/monitorListChipGroup"
+            >
+
+        </com.google.android.material.chip.ChipGroup>
+
+        <View
+            android:layout_width="0dp"
+            android:layout_height="1dp"
+            android:background="@color/cardview_shadow_end_color"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

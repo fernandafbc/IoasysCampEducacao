@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.register.SubjectRegisterFragment">
+
+    <TextView
+        android:id="@+id/subjectRegistrationTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:gravity="center_horizontal"
+        android:text="@string/make_registration_txt"
+        android:textColor="#252A34"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/addSubjectEdTxt"
+        />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/addSubjectEdTxt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/subjectRegistrationTxt"
+        app:layout_constraintBottom_toTopOf="@+id/chipGroup"
+        android:layout_marginStart="26dp"
+        android:layout_marginEnd="26dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_edit_text"
+        android:hint="@string/what_subject"
+        android:padding="4dp"
+        />
+
+    <com.google.android.material.chip.ChipGroup
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSubjectEdTxt"
+        android:id="@+id/chipGroup"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginEnd="40dp"
+        >
+    </com.google.android.material.chip.ChipGroup>
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipGroup"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Adicionar Matéria"
+        android:id="@+id/addSubjectBtn"
+        app:cornerRadius="1000dp"
+        android:backgroundTint="@color/colorAccent"
+        app:strokeColor="@color/colorAccent"
+        app:rippleColor="#c7224c"
+        android:textColor="#ffffff"
+
+        />
+
+    <ImageButton
+        android:id="@+id/subjectContinueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="200dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/addSubjectBtn"
+        app:layout_constraintBottom_toTopOf="@+id/subjectHaveAccountTxt"
+        app:layout_goneMarginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/subjectHaveAccountTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:text="@string/have_account_register_txt"
+        android:textColor="#252A34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/subjectContinueButton"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/subjectLoginTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/login_register_txt"
+        android:textColor="#FF2E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/subjectHaveAccountTxt"
+        app:layout_constraintTop_toBottomOf="@+id/subjectContinueButton"
+        android:layout_marginBottom="8dp"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

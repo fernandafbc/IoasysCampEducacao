@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/monitor_profile_navigation"
+    app:startDestination="@id/monitorProfileFragment">
+
+    <fragment
+        android:id="@+id/monitorProfileFragment"
+        android:name="br.com.ioasys.camp.educao.ui.monitor_profile.MonitorProfileFragment"
+        android:label="fragment_monitor_profile"
+        tools:layout="@layout/fragment_monitor_profile" />
+    <fragment
+        android:id="@+id/solicitationsFragment"
+        android:name="br.com.ioasys.camp.educao.ui.monitor_profile.SolicitationsFragment"
+        android:label="fragment_solicitations"
+        tools:layout="@layout/fragment_solicitations" />
+</navigation>

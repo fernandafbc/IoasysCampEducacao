@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/background"
+    tools:context=".ui.authentication.register.ThirdRegisterFragment">
+
+    <TextView
+        android:id="@+id/thirdRegistrationTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="89dp"
+        android:gravity="center_horizontal"
+        android:text="@string/make_registration_txt"
+        android:textColor="#252A34"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/emailRegEdTxt"/>
+
+    <EditText
+        android:id="@+id/emailRegEdTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/email_register_edTxt"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:textColorHint="#252A34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/thirdRegistrationTxt"
+        app:layout_constraintBottom_toTopOf="@+id/passwordRegEdTxt"
+
+        />
+
+    <EditText
+        android:id="@+id/passwordRegEdTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/password_register_edTxt"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColorHint="#252A34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/emailRegEdTxt"
+        app:layout_constraintBottom_toTopOf="@+id/confirmPasswordRegEdTxt"
+        app:passwordToggleEnabled="true"
+
+        />
+
+    <EditText
+        android:id="@+id/confirmPasswordRegEdTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="32dp"
+        android:hint="@string/confirm_password_register_edTxt"
+        android:inputType="textPassword"
+        android:textSize="16sp"
+        android:textColorHint="#252A34"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordRegEdTxt"
+        app:layout_constraintBottom_toTopOf="@+id/thirdContinueButton"
+        app:passwordToggleEnabled="true"
+
+        />
+
+    <ImageButton
+        android:id="@+id/thirdContinueButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="72dp"
+        android:background="@drawable/rounded_button"
+        android:src="@drawable/ic_arrow_forward_black_24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/confirmPasswordRegEdTxt"
+        app:layout_constraintBottom_toTopOf="@+id/thirdHaveAccountTxt"
+        app:layout_goneMarginEnd="16dp"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/thirdHaveAccountTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="105dp"
+        android:text="@string/have_account_register_txt"
+        android:textColor="#252A34"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:maxLines="1"
+        app:layout_constraintTop_toBottomOf="@+id/thirdContinueButton"
+        android:layout_marginTop="8dp"
+
+        />
+
+    <TextView
+        android:id="@+id/secondLoginTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_marginStart="4dp"
+        android:text="@string/login_register_txt"
+        android:textColor="#FF2E63"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/thirdHaveAccountTxt"
+        app:layout_constraintTop_toBottomOf="@+id/thirdContinueButton"
+
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
